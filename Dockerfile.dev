@@ -1,11 +1,11 @@
 FROM node:alpine
 
-WORKDIR /app
+WORKDIR /mylogin_app
 
-COPY package.json /app
+COPY package.json /mylogin_app
 
 RUN npm install
 
-COPY . /app
+COPY . /mylogin_app
 
 CMD ["npm","start"]
